@@ -209,7 +209,7 @@ header {
     color: var(--main-txt-cl);
 }
 
-.adv-list {
+.advant-list {
     display: flex;
     justify-content: space-between;
     width: 1170px;
@@ -217,7 +217,7 @@ header {
     padding: 94px 0;
 }
 
-.adv-item {
+.advant-item {
     width: calc(100% / 3 - 30px);
     margin: 0;
     display: block;
