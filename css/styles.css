@@ -37,11 +37,16 @@ a {
 }
 
 ul,
-li,
 div,
-h2 {
+h2,
+p {
     margin: 0;
     padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .navlink .current {
@@ -49,11 +54,15 @@ h2 {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.portfolio-main {
+    padding: 94px 0;
 }
 
 
@@ -90,17 +99,17 @@ header {
 }
 
 .navlink a {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
-    display: block;
     padding: 32px 0;
     margin-right: 50px;
 }
 
-.navlink a :not(:last-child) {
+.navlink a:not(:last-child) {
     margin-right: 0;
 }
 
@@ -122,11 +131,17 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--fourth-txt-cl);
-    margin-right: 50px;
+    padding-right: 50px;
+    display: block;
+}
+
+.head-number {
+    padding-right: 0;
 }
 
 .head-mail:hover,
-.head-mail:active {
+.head-mail:active,
+.head-number:hover {
     color: var(--thirty-txt-cl);
 }
 
@@ -200,12 +215,10 @@ header {
     width: 1170px;
     gap: 30px;
     padding: 94px 0;
-    margin: 0 auto;
 }
 
 .adv-item {
-    width: 270px;
-    flex-basis: calc((100% - 270px) / 4);
+    width: calc(100% / 3 - 30px);
     margin: 0;
     display: block;
 }
@@ -245,10 +258,10 @@ header {
 
 .works {
     display: flex;
-    flex-wrap: wrap;
     margin: -15px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 94px;
 }
 
 .works:not(:last-child) {
@@ -256,7 +269,7 @@ header {
 }
 
 .work-img {
-    flex-basis: calc((100% - 370px) / 3);
+    width: calc(100% / 3 - 30px);
     margin: 15px;
 }
 
@@ -267,12 +280,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    justify-content: center;
 }
 
 .team {
     background-color: var(--fourth-bg-cl);
     padding: 94px 0;
-    margin-top: 94px;
 }
 
 .team-list:not(:last-child) {
@@ -371,7 +384,7 @@ header {
 .filtr {
     display: flex;
     justify-content: center;
-    padding: 94px 0 50px;
+    margin-bottom: 50px;
 }
 
 .btn-filtr {
@@ -381,7 +394,6 @@ header {
     font-size: 16px;
     padding: 6px 22px;
     text-align: center;
-    margin-right: 8px;
     border: none;
 }
 
@@ -389,9 +401,8 @@ header {
     margin: 0;
 }
 
-.btn-filtr .current,
-.btn-filtr:hover,
-.btn-filtr:focus {
+.current-2:hover,
+.current-2:focus {
     background-color: var(--secondary-bg-cl);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -410,7 +421,7 @@ header {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
-    margin: 0;
+    margin-bottom: 4px;
 }
 
 .subtitle-project {
