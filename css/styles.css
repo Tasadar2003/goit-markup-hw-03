@@ -396,7 +396,8 @@ header {
     padding: 6px 22px;
     text-align: center;
     border: none;
-    margin-right: var(--indent-button);
+    display: block;
+    margin-right: 8px;
 }
 
 .btn-filtr:not(:last-child) {
