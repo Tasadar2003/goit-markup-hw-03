@@ -212,14 +212,14 @@ header {
     padding: 94px 0;
 }
 
-.adv-list {
+.advan-list {
     display: flex;
     justify-content: space-between;
     width: 1170px;
     gap: 30px;
 }
 
-.adv-item {
+.advan-item {
     width: calc(100% / 3 - 30px);
     margin: 0;
     display: block;
